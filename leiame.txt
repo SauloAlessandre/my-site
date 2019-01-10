@@ -1,0 +1,2 @@
+mkdir curso-git
+cd curso-git

@@ -1,7 +1,7 @@
 
 working directory -> index -> HEAD
 
-git init
+git init <to_start>
 git status
 git add
 git add -a

@@ -1,2 +1,48 @@
-mkdir curso-git
-cd curso-git
+
+working directory -> index -> HEAD
+
+git init
+git status
+git add
+git add -a
+#---- git add stage interactive
+git add -i
+#---- add all changes
+git add -a
+#---- add and commit all changes
+git commit -a -m "message"
+
+#---- changes on files
+git log [-p]
+git whatchanged [-p]
+
+#---- upload to server https://... = origin
+git remote
+git remote add origin https://github.com/SauloAlessandre/my-site
+#---- origin = alias to server .:. master = branch
+git push origin master
+
+#---- download clone
+git clone https://github.com/SauloAlessandre/my-site
+
+git add index.html
+git commit -m "change message"
+
+git push
+
+#---- git branch
+# -r remote branches
+# -a local and remote branches
+git branch [-r|-a]
+git branch design
+#---- create and checkout a branch
+git checkout -b <newbranch>
+#---- delete a branch
+git branch -d <branch>
+#---- create, checkout and link a branch to remote
+git branch -t <new_branch>
+#---- delete a remote branch
+git push -d origin design
+git push origin :design
+#---- verify update on remote
+git fetch origin
